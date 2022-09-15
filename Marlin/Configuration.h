@@ -538,9 +538,8 @@
   #define INVERT_E6_DIR false
   #define INVERT_E7_DIR false
 
-  #if ENABLED(EZOUT_ENABLE)
-    #define FILAMENT_RUNOUT_SENSOR
-  #endif
+  #define FILAMENT_RUNOUT_SENSOR
+  #define FIL_RUNOUT_PIN 29
 
   #if ENABLED(FILAMENT_RUNOUT_SENSOR)
     #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
