@@ -23,7 +23,7 @@
 //#define CR10_S4
 //#define CR10_S5
 //#define ENDER2
-//#define ENDER3
+#define ENDER3
 //#define ENDER5
 
 // If you are using our EZOut V1/V2 (connects to LCD header) filament sensor kit please follow the install guide
@@ -43,7 +43,7 @@
 //#define TM3DAERO
 //#define TM3DAERO_EXTENDED
 //#define PETSFANG //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // Ender 5 - Leadscrew Setting
 // If you have the new Ender 5/5 Pro Model that has the new 800steps/mm Z leadscrew uncomment the below option to set the correct steps/mm
@@ -116,7 +116,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -41, -9, 0 }
 #endif
 
 
@@ -243,9 +243,9 @@
 // BL TOUCH ----------------------------------------
 // If you want to use the BL-Touch with our EZOut board uncomment the 2 lines below and set your servo pin (27 for all machines except Ender 2, Ender 2 uses 29).
 // You also need to uncomment #define CUSTOM_PROBE above and then enter in your offsets above in the CUSTOM PROBE section.
-//#define BLTOUCH
+#define BLTOUCH
 // Here is where you set your servo pin.
-//#define SERVO0_PIN 27
+#define SERVO0_PIN 27
 
 // MANUAL MESH LEVELING ----------------------------
 // If you want to use manual mesh leveling you can enable the below option. This is for generating a MANUAL mesh WITHOUT a probe. To change the mesh inset value change the EZABL_PROBE_EDGE setting above.
@@ -502,7 +502,7 @@
   #define X_MAX_ENDSTOP_INVERTING false
   #define Y_MAX_ENDSTOP_INVERTING false
   #define Z_MAX_ENDSTOP_INVERTING false
-  #define Z_MIN_PROBE_ENDSTOP_INVERTING false
+  #define Z_MIN_PROBE_ENDSTOP_INVERTING true
   #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
   #define X_DRIVER_TYPE A4988

@@ -55,6 +55,7 @@
 #undef LCD_PINS_D5
 #undef LCD_PINS_D6
 #undef LCD_PINS_D7
+#undef BEEPER_PIN
 
 #define LCD_SDSS                              31  // Smart Controller SD card reader (rather than the Melzi)
 #define LCD_PINS_RS                           28  // ST9720 CS
